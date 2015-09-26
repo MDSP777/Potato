@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        
+        <div id="signup-modal" class="modal">
+            <div class="modal-content">
+                <h4>Sign up</h4>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="contactno" type="text" class="validate">
+                        <label for="contactno">Contact number</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="e.g. xxxx-xxxx-xxxx-xxxx" id="creditcard" type="text" class="validate">
+                        <label for="creditcard">Credit card number</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="emconperson" type="text" class="validate">
+                        <label for="emconperson">Emergency contact person</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="emconnumber" type="text" class="validate">
+                        <label for="emconnumber">Emergency contact number</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Sign up</a>
+            </div>
+        </div>
+        
+        <div id="signin-modal" class="modal">
+            <div class="modal-content">
+                <h4>Log in</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Log in</a>
+            </div>
+        </div>
+        
+        <div id="video-div">
+            <video autoplay poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                <source src="assets/tribe%20vid.mp4" type="video/mp4">
+            </video>
+
+            <div id="navbar" class="navbar-fixed">
+                <nav class="navbar-color">
+                    <div class="nav-wrapper navbar">
+                        <div class="left">
+                            Logo
+                        </div>
+                        <div class="right hide-on-med-and-down">
+                            <a class="btn btn-navbar modal-trigger" href="#signup-modal">Sign up</a>
+                            <a class="btn btn-navbar modal-trigger" href="#signin-modal">Sign in</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="center-align">
+                <h1 class="white-text">Lorem ipsum!</h1>
+                <h5 class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+            </div>
+        </div>
+        
+        <div class="full-div">
+            <div class="container">
+                <div class = "row">
+                    <h4>Tribe Wonders</h4>
+                </div>
+                
+                <div class="row">
+                    <ul id="tribe-wonders">
+                    <li class = "col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/mwed_2006_n01_p098_a01_v05.jpg" height="200">
+                                <span class="card-title">Manobo Tribe</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href = "#" class ="white">Inquire</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class = "col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/Kadayawan%20Festival%20(1).jpg" height="200">
+                                <span class="card-title">Badjao Tribe</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="white">Inquire</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class = "col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/ifugao-people.jpg" height="200">
+                                <span class="card-title">Ifugao Tribe</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="white">Inquire</a>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="latest-stories" class="full-div">
+            <div class="container">
+                <h4>Latest Stories</h4>
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                            <div class="caption center-align">
+                                <h3>This is our big Tagline!</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                            <div class="caption left-align">
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                            <div class="caption right-align">
+                                <h3>Right Aligned Caption</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                            <div class="caption center-align">
+                                <h3>This is our big Tagline!</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <script>
+        $( document ).ready(function(){
+            $(".button-collapse").sideNav();
+            $('.slider').slider({full_width: true});
+            $('.modal-trigger').leanModal();
+        })
+        $(window).scroll(function(){
+            if($(this).scrollTop()>$('#video-div').height()){
+                $('#navbar').fadeOut();
+            }else{
+                $('#navbar').fadeIn();
+            }
+        });
+        var options = [
+            {selector: '#tribe-wonders', offset: 200, callback: 'Materialize.showStaggeredList("#tribe-wonders")' },
+            {selector: '#latest-stories', offset: 200, callback: 'Materialize.fadeInImage("#latest-stories")' }
+        ];
+        Materialize.scrollFire(options);
+    </script>
+</html>
